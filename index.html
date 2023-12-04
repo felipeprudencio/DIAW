@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Homepage - Sabores De Minas</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/6030/6030844.png" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/mystyle.css" rel="stylesheet" />
+
+   <!-- MapBox -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js"></script>
+ <!-- MapBox -->
+  
+</head>
+
+<body>
+  <header>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container px-5">
+        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" class="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#albuns">Álbuns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#credios">Créditos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+      <!-- Destaque -->
+      <h4 class="titulo mt-4">Destaques</h4>
+      <hr />
+
+      <!-- Carrosel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators" id="carouselIndicators">
+          <!-- Botões serão carregados dinamicamente -->
+        </div>
+        <div class="carousel-inner" id="carouselInner">
+          <!-- Slides serão carregados dinamicamente -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- FIM Carrosel -->
+
+
+      <!-- Mapa -->
+      <h4 class="titulo mt-4">Mapa</h4>
+      <hr />
+
+      <div id="map"></div>
+
+      <!-- Destinos -->
+      <h4 class="titulo mt-4" id="albuns">Álbuns</h4>
+      <hr />
+
+      <!-- Content Row-->
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="card-container">
+
+        <!-- Cards gerados automaticamente -->
+        
+      </div>
+      
+
+      <!-- Creditos -->
+      <h4 class="titulo mt-4" id="credios">Créditos</h4>
+      <hr />
+
+      <div class="row g-2 creditos">
+        <!-- Parte do sobre -->
+        <div class="col-md-8">
+          <h6>Sobre</h6>
+          <p class="pe-5">
+            O Trabalho Prático 2 de Desenvolvimento de Interfaces Web tem como objetivo dar vida ao layout desenvolvido no trabalho anterior, apresentando informações reais sobre os álbuns, obtidas dinamicamente a partir de um servidor JSON Server que oferece uma API e servirá como back end da aplicação.
+          </p>
+        </div>
+
+        <!--Agrupador de COnteudo dos Creditos -->
+        <div class="col-md-4">
+          <h6>Autoria:</h6>
+
+          <div class="d-flex agrupador-creditos">
+            <div>
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaD1EveWYRIxhiycTVDHRhTBQToGnEVCS2I2U7ipaBdJJGKHKHqT-qqNgaSYpKhIO-9s2m0xbUAEMQxjZ7sd7-3v_8S7=w1347-h885"
+                class="img-credito" />
+            </div>
+
+            <div class="autoria">
+              <p><span>Autor:</span> Felipe Prudêncio</p>
+              <p><span>Curso:</span> Engenharia De Software</p>
+              <p><span>Turma:</span> Noite</p>
+            </div>
+          </div>
+
+          <h6>Redes Sociais:</h6>
+
+          <div class="redes-sociais">
+            <p>
+              <a href="https://i.pinimg.com/550x/84/38/00/84380062a2413479192ba0b194706c4b.jpg"><i
+                  class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://i.pinimg.com/550x/84/38/00/84380062a2413479192ba0b194706c4b.jpg"><i
+                  class="fa-brands fa-square-whatsapp"></i></a>
+              <a href="https://i.pinimg.com/550x/84/38/00/84380062a2413479192ba0b194706c4b.jpg"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://i.pinimg.com/550x/84/38/00/84380062a2413479192ba0b194706c4b.jpg"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5">
+      <p class="m-0 text-center text-white">Copyright &copy; 2023</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>
